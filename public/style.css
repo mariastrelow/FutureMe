@@ -7,8 +7,8 @@ h1,h2,h3,.fm{font-family:Sora,Inter,sans-serif;line-height:1.15;margin:0}
 main{flex:1}
 .top{padding:16px 0}
 .top-in{display:flex;justify-content:space-between;align-items:center}
-.fm{font-size:1.5rem;font-weight:800;color:var(--ink);letter-spacing:-.02em}.fm b{color:var(--p)}
-.brand{text-decoration:none}
+.fm{font-size:1.6rem;font-weight:800;color:var(--ink);letter-spacing:-.03em}.fm b{background:linear-gradient(135deg,var(--p),var(--pd));-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand{text-decoration:none;display:inline-flex;align-items:center;gap:10px}.mark{flex:none;filter:drop-shadow(0 4px 10px rgba(158,15,82,.25))}
 .by{display:flex;align-items:center;gap:8px}.by-t{color:var(--mut);font-size:.85rem}
 .afya-logo{height:28px}.afya-txt{font:800 1.5rem Sora,sans-serif;color:var(--p);letter-spacing:-.03em}
 .screen{display:none}.screen.on{display:block}
