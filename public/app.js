@@ -57,6 +57,8 @@ async function finish() {
   const pontuacao = pontuar();
   const respostas = resp.map((r, i) => ({ pergunta: perguntas[i].pergunta, resposta: perguntas[i].opcoes[r].texto }));
   let result;
+  // Espera aleatória (0 a 6 s) para uma turma inteira não chamar a IA no mesmo segundo.
+  await new Promise((ok) => setTimeout(ok, Math.random() * 6000));
   try {
     const r = await fetch("/api/analisar", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ respostas, pontuacao }) });
     if (!r.ok) throw new Error();
