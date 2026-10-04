@@ -12,7 +12,6 @@ exports.handler = async (event) => {
   if (!Array.isArray(respostas) || respostas.length < 15) return json(400, { erro: "dados_invalidos" });
 
   const afya = cursos.filter((c) => c.afya).map((c) => `${c.nome} (${c.area}): ${c.caminhos.join(", ")}`);
-  const outros = cursos.filter((c) => !c.afya).map((c) => `${c.nome} (${c.area}): ${c.caminhos.join(", ")}`);
   const prompt = `Você ajuda estudantes do Ensino Médio a CONHECER possibilidades de cursos de graduação e áreas, a partir dos seus interesses. Você NÃO escolhe a carreira pelo estudante.
 
 RESPOSTAS DO ESTUDANTE:
@@ -23,12 +22,9 @@ PONTUAÇÃO POR TEMA (quanto maior, mais apareceu): ${JSON.stringify(pontuacao)}
 CURSOS DA AFYA JI-PARANÁ (use os nomes exatamente assim quando fizerem sentido):
 ${afya.join("\n")}
 
-OUTROS CURSOS DE GRADUAÇÃO (não são da Afya Ji-Paraná; use os nomes exatamente assim quando fizerem sentido):
-${outros.join("\n")}
-
 REGRAS:
 - Primeiro identifique de 2 a 4 áreas de interesse; depois relacione-as às características do estudante; depois sugira de 4 a 6 cursos de graduação reais e atuais (da Afya ou não).
-- Escolha pelo PERFIL do estudante, nunca pela instituição. Dos 4 a 6 cursos, pelo menos 2 devem ser de fora da Afya (da lista de outros cursos ou de outros cursos reais) sempre que combinarem com as respostas; inclua cursos da Afya só quando realmente combinarem.
+- Escolha pelo PERFIL do estudante, nunca pela instituição. NÃO se limite à lista da Afya: considere todo o universo de cursos de graduação reais do Brasil (saúde, exatas, humanas, artes, comunicação, tecnologia, natureza, gestão, esportes, educação, engenharias e demais áreas). Dos 4 a 6 cursos, pelo menos 3 devem ser de fora da lista da Afya, sempre que combinarem com as respostas, incluindo pelo menos 1 curso pouco conhecido ou específico que o estudante provavelmente nunca considerou. Inclua cursos da Afya só quando realmente combinarem.
 - Varie: inclua pelo menos 2 cursos menos óbvios que o estudante talvez nunca tenha considerado. Não repita sempre Medicina, Direito, Psicologia, Enfermagem ou Ciência da Computação; só inclua se as respostas realmente indicarem.
 - Linguagem de descoberta e possibilidade ("pode combinar", "talvez seja interessante conhecer", "pode levar a caminhos como"). NUNCA diga "seu curso é", "você deve fazer", "nasceu para" ou "profissão certa".
 - Caminhos de atuação são possibilidades, nunca garantia de carreira.
