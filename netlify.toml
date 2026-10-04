@@ -1,0 +1,8 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/analisar"
+  to = "/.netlify/functions/analisar"
+  status = 200

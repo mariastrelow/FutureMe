@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FutureMe | Descubra cursos e áreas que combinam com seus interesses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#" id="home" aria-label="FutureMe, início">
+      <span class="fm">Future<b>Me</b></span>
+    </a>
+    <span class="by">
+      <span class="by-t">com</span>
+      <!-- Coloque o logo oficial em public/img/afya-logo.svg (ou .png e ajuste o src) -->
+      <img src="img/afya-logo.svg" alt="Afya" class="afya-logo" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'afya-txt',textContent:'afya'}))">
+    </span>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="s-home" class="screen on hero">
+    <div class="hero-txt">
+      <h1>Descubra cursos e áreas que combinam com seus interesses.</h1>
+      <p>Responda 17 perguntas rápidas, sem certo ou errado. Você vai ver áreas e graduações que talvez nunca tenha considerado e entender por que elas apareceram para você.</p>
+      <button class="btn big" id="start">Começar</button>
+      <p class="fine">Leva cerca de 4 minutos. Não pedimos nome nem e-mail e nada fica salvo.</p>
+    </div>
+    <div class="orbit" aria-hidden="true">
+      <div class="core">Você</div>
+      <span style="--a:0deg">Tecnologia</span><span style="--a:60deg">Saúde</span><span style="--a:120deg">Natureza</span>
+      <span style="--a:180deg">Criação</span><span style="--a:240deg">Pessoas</span><span style="--a:300deg">Gestão</span>
+    </div>
+  </section>
+
+  <section id="s-quiz" class="screen">
+    <div class="quiz">
+      <div class="prog-top"><span id="qnum"></span><span id="qpct"></span></div>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"><i id="bar"></i></div>
+      <h2 id="qtext" tabindex="-1"></h2>
+      <div id="opts" class="opts" role="radiogroup"></div>
+      <div class="nav">
+        <button class="btn ghost" id="back">Voltar</button>
+        <button class="btn" id="next" disabled>Continuar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="s-load" class="screen">
+    <div class="loading">
+      <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+      <h2>Analisando suas respostas</h2>
+      <p id="lmsg">Procurando conexões entre seus interesses…</p>
+    </div>
+  </section>
+
+  <section id="s-res" class="screen">
+    <div class="res">
+      <h2>O que apareceu nas suas respostas?</h2>
+      <p class="lead" id="r-resumo"></p>
+      <h3>Áreas que podem despertar seu interesse</h3>
+      <div id="r-areas" class="areas"></div>
+      <h3>Cursos que você pode conhecer</h3>
+      <p class="note">São possibilidades para explorar, não uma decisão. Os caminhos de atuação variam de pessoa para pessoa.</p>
+      <div id="r-cursos" class="cursos"></div>
+      <div class="cta">
+        <div>
+          <h3>Quer conhecer mais possibilidades?</h3>
+          <p>Explore os cursos de graduação da Afya Ji-Paraná e descubra outras áreas que podem despertar seu interesse.</p>
+        </div>
+        <a class="btn light" href="https://jiparana.afya.com.br/" target="_blank" rel="noopener">Conheça nossos cursos</a>
+      </div>
+      <div class="again"><button class="btn ghost" id="again">Refazer o questionário</button></div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <span>FutureMe é uma ferramenta de exploração. Converse também com professores, familiares e profissionais.</span>
+  <span class="demo">
+    <button id="demo-btn" aria-expanded="false">Demonstração</button>
+    <span id="demo-menu" hidden></span>
+  </span>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

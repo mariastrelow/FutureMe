@@ -1,0 +1,721 @@
+[
+ {
+  "pergunta": "Qual dessas atividades você teria mais vontade de experimentar?",
+  "opcoes": [
+   {
+    "texto": "Criar um aplicativo ou site",
+    "tags": [
+     "tec",
+     "cri"
+    ]
+   },
+   {
+    "texto": "Ajudar uma pessoa a resolver um problema",
+    "tags": [
+     "pes",
+     "sau"
+    ]
+   },
+   {
+    "texto": "Descobrir como funciona o corpo humano",
+    "tags": [
+     "sau",
+     "inv"
+    ]
+   },
+   {
+    "texto": "Criar um projeto ou construir alguma coisa",
+    "tags": [
+     "con",
+     "exa"
+    ]
+   },
+   {
+    "texto": "Trabalhar com animais",
+    "tags": [
+     "ani",
+     "nat"
+    ]
+   },
+   {
+    "texto": "Criar algo visual e diferente",
+    "tags": [
+     "cri",
+     "com"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Qual matéria da escola mais desperta sua curiosidade?",
+  "opcoes": [
+   {
+    "texto": "Matemática ou Física",
+    "tags": [
+     "exa",
+     "tec"
+    ]
+   },
+   {
+    "texto": "Biologia",
+    "tags": [
+     "sau",
+     "nat"
+    ]
+   },
+   {
+    "texto": "Química",
+    "tags": [
+     "inv",
+     "sau"
+    ]
+   },
+   {
+    "texto": "Português, Redação ou Artes",
+    "tags": [
+     "com",
+     "cri"
+    ]
+   },
+   {
+    "texto": "História, Sociologia ou Filosofia",
+    "tags": [
+     "pes",
+     "inv"
+    ]
+   },
+   {
+    "texto": "Geografia",
+    "tags": [
+     "nat",
+     "con"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Num fim de semana livre, o que você mais gosta de fazer?",
+  "opcoes": [
+   {
+    "texto": "Mexer em jogos, computador ou celular",
+    "tags": [
+     "tec"
+    ]
+   },
+   {
+    "texto": "Estar com amigos e conversar",
+    "tags": [
+     "pes",
+     "com"
+    ]
+   },
+   {
+    "texto": "Desenhar, editar vídeos, tocar ou escrever",
+    "tags": [
+     "cri"
+    ]
+   },
+   {
+    "texto": "Ficar ao ar livre ou perto de animais",
+    "tags": [
+     "nat",
+     "ani"
+    ]
+   },
+   {
+    "texto": "Praticar esporte ou me movimentar",
+    "tags": [
+     "sau",
+     "con"
+    ]
+   },
+   {
+    "texto": "Organizar, planejar ou montar coisas",
+    "tags": [
+     "ges",
+     "con"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Quando aparece um problema difícil, o que você costuma fazer primeiro?",
+  "opcoes": [
+   {
+    "texto": "Pesquiso e tento entender a causa",
+    "tags": [
+     "inv"
+    ]
+   },
+   {
+    "texto": "Divido em etapas e organizo um plano",
+    "tags": [
+     "ges",
+     "exa"
+    ]
+   },
+   {
+    "texto": "Converso com pessoas para ouvir opiniões",
+    "tags": [
+     "pes",
+     "com"
+    ]
+   },
+   {
+    "texto": "Tento algo diferente, criativo",
+    "tags": [
+     "cri"
+    ]
+   },
+   {
+    "texto": "Testo na prática até funcionar",
+    "tags": [
+     "con",
+     "tec"
+    ]
+   },
+   {
+    "texto": "Assumo a frente e coordeno o grupo",
+    "tags": [
+     "lid"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Que tipo de problema você gostaria de ajudar a resolver?",
+  "opcoes": [
+   {
+    "texto": "Doenças e qualidade de vida das pessoas",
+    "tags": [
+     "sau"
+    ]
+   },
+   {
+    "texto": "Cidades, moradias e infraestrutura",
+    "tags": [
+     "con",
+     "nat"
+    ]
+   },
+   {
+    "texto": "Questões de tecnologia e dados",
+    "tags": [
+     "tec",
+     "exa"
+    ]
+   },
+   {
+    "texto": "Bem-estar emocional e relações entre pessoas",
+    "tags": [
+     "pes"
+    ]
+   },
+   {
+    "texto": "Cuidado com animais, meio ambiente ou produção de alimentos",
+    "tags": [
+     "ani",
+     "nat"
+    ]
+   },
+   {
+    "texto": "Injustiças, regras e direitos",
+    "tags": [
+     "com",
+     "lid"
+    ]
+   },
+   {
+    "texto": "Dinheiro e organização de negócios",
+    "tags": [
+     "ges",
+     "exa"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Num trabalho em grupo, qual papel você assume naturalmente?",
+  "opcoes": [
+   {
+    "texto": "Líder: organizo e distribuo tarefas",
+    "tags": [
+     "lid",
+     "ges"
+    ]
+   },
+   {
+    "texto": "Criativo: tenho as ideias",
+    "tags": [
+     "cri"
+    ]
+   },
+   {
+    "texto": "Pesquisador: busco informações",
+    "tags": [
+     "inv"
+    ]
+   },
+   {
+    "texto": "Comunicador: apresento e explico",
+    "tags": [
+     "com"
+    ]
+   },
+   {
+    "texto": "Mão na massa: executo e monto",
+    "tags": [
+     "con",
+     "tec"
+    ]
+   },
+   {
+    "texto": "Apoio: cuido para o grupo ficar bem",
+    "tags": [
+     "pes",
+     "sau"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Em qual ambiente você se imagina trabalhando?",
+  "opcoes": [
+   {
+    "texto": "Hospital, clínica ou laboratório",
+    "tags": [
+     "sau",
+     "inv"
+    ]
+   },
+   {
+    "texto": "Escritório ou de casa, com computador",
+    "tags": [
+     "tec",
+     "ges"
+    ]
+   },
+   {
+    "texto": "Obra, campo ou fazenda",
+    "tags": [
+     "con",
+     "nat",
+     "ani"
+    ]
+   },
+   {
+    "texto": "Estúdio, agência ou ambiente criativo",
+    "tags": [
+     "cri",
+     "com"
+    ]
+   },
+   {
+    "texto": "Escola, tribunal ou empresa, lidando com gente",
+    "tags": [
+     "pes",
+     "lid"
+    ]
+   },
+   {
+    "texto": "Um pouco de cada, mudando sempre",
+    "tags": [
+     "lid",
+     "com"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Você prefere atividades mais...",
+  "opcoes": [
+   {
+    "texto": "Práticas, de colocar a mão na massa",
+    "tags": [
+     "con",
+     "sau"
+    ]
+   },
+   {
+    "texto": "Teóricas, de estudar e entender a fundo",
+    "tags": [
+     "inv",
+     "exa"
+    ]
+   },
+   {
+    "texto": "De conversar e interagir com pessoas",
+    "tags": [
+     "pes",
+     "com"
+    ]
+   },
+   {
+    "texto": "De criar e inventar",
+    "tags": [
+     "cri",
+     "tec"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Qual desses conteúdos você assistiria ou leria sem se cansar?",
+  "opcoes": [
+   {
+    "texto": "Como a tecnologia e a IA funcionam",
+    "tags": [
+     "tec"
+    ]
+   },
+   {
+    "texto": "Curiosidades sobre o corpo e a mente",
+    "tags": [
+     "sau",
+     "pes"
+    ]
+   },
+   {
+    "texto": "Documentários sobre natureza e animais",
+    "tags": [
+     "nat",
+     "ani"
+    ]
+   },
+   {
+    "texto": "Casos de investigação e mistérios reais",
+    "tags": [
+     "inv"
+    ]
+   },
+   {
+    "texto": "Arquitetura, design e construções incríveis",
+    "tags": [
+     "con",
+     "cri"
+    ]
+   },
+   {
+    "texto": "Notícias, política e debates",
+    "tags": [
+     "com",
+     "lid"
+    ]
+   },
+   {
+    "texto": "Empreendedorismo e finanças",
+    "tags": [
+     "ges",
+     "exa"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Quanto contato direto com pessoas você gostaria de ter no trabalho?",
+  "opcoes": [
+   {
+    "texto": "Muito: o dia todo ajudando e atendendo",
+    "tags": [
+     "pes",
+     "sau"
+    ]
+   },
+   {
+    "texto": "Bastante, mas em equipes e reuniões",
+    "tags": [
+     "lid",
+     "com"
+    ]
+   },
+   {
+    "texto": "Equilibrado entre pessoas e tarefas individuais",
+    "tags": [
+     "ges"
+    ]
+   },
+   {
+    "texto": "Pouco: prefiro focar no que estou criando ou analisando",
+    "tags": [
+     "tec",
+     "inv"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "E com números, dados e cálculos?",
+  "opcoes": [
+   {
+    "texto": "Gosto muito, é como um quebra-cabeça",
+    "tags": [
+     "exa",
+     "tec"
+    ]
+   },
+   {
+    "texto": "Gosto quando servem para resolver algo real",
+    "tags": [
+     "con",
+     "ges"
+    ]
+   },
+   {
+    "texto": "Uso o necessário, mas prefiro outras coisas",
+    "tags": [
+     "pes",
+     "com"
+    ]
+   },
+   {
+    "texto": "Não é minha praia",
+    "tags": [
+     "cri",
+     "pes"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Como é sua relação com natureza e animais?",
+  "opcoes": [
+   {
+    "texto": "Amo: queria trabalhar com isso",
+    "tags": [
+     "ani",
+     "nat"
+    ]
+   },
+   {
+    "texto": "Gosto e me interesso pela ciência por trás",
+    "tags": [
+     "nat",
+     "inv"
+    ]
+   },
+   {
+    "texto": "Gosto, mas como hobby",
+    "tags": [
+     "pes"
+    ]
+   },
+   {
+    "texto": "Prefiro ambientes urbanos e tecnológicos",
+    "tags": [
+     "tec",
+     "con"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Como a criatividade aparece em você?",
+  "opcoes": [
+   {
+    "texto": "Em ideias para projetos e soluções",
+    "tags": [
+     "cri",
+     "inv"
+    ]
+   },
+   {
+    "texto": "No visual: desenho, design, fotos, vídeos",
+    "tags": [
+     "cri",
+     "com"
+    ]
+   },
+   {
+    "texto": "Em escrever, falar e contar histórias",
+    "tags": [
+     "com"
+    ]
+   },
+   {
+    "texto": "Em construir e montar coisas",
+    "tags": [
+     "con",
+     "tec"
+    ]
+   },
+   {
+    "texto": "Em inventar jeitos de ajudar as pessoas",
+    "tags": [
+     "pes",
+     "sau"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Qual característica você gostaria de desenvolver mais?",
+  "opcoes": [
+   {
+    "texto": "Raciocínio lógico",
+    "tags": [
+     "exa",
+     "tec"
+    ]
+   },
+   {
+    "texto": "Empatia e escuta",
+    "tags": [
+     "pes",
+     "sau"
+    ]
+   },
+   {
+    "texto": "Liderança",
+    "tags": [
+     "lid",
+     "ges"
+    ]
+   },
+   {
+    "texto": "Comunicação e argumentação",
+    "tags": [
+     "com"
+    ]
+   },
+   {
+    "texto": "Visão crítica e investigativa",
+    "tags": [
+     "inv"
+    ]
+   },
+   {
+    "texto": "Cuidado, precisão e paciência",
+    "tags": [
+     "sau",
+     "con"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Qual tipo de projeto escolar você mais gostou de fazer?",
+  "opcoes": [
+   {
+    "texto": "Feira de ciências ou experimento",
+    "tags": [
+     "inv",
+     "sau"
+    ]
+   },
+   {
+    "texto": "Maquete, protótipo ou algo construído",
+    "tags": [
+     "con",
+     "cri"
+    ]
+   },
+   {
+    "texto": "Apresentação, debate ou teatro",
+    "tags": [
+     "com",
+     "lid"
+    ]
+   },
+   {
+    "texto": "Pesquisa sobre sociedade ou comportamento",
+    "tags": [
+     "pes",
+     "inv"
+    ]
+   },
+   {
+    "texto": "Projeto com programação, vídeo ou design digital",
+    "tags": [
+     "tec",
+     "cri"
+    ]
+   },
+   {
+    "texto": "Organizar um evento ou campanha",
+    "tags": [
+     "ges",
+     "lid"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Que tipo de impacto você gostaria de deixar no mundo?",
+  "opcoes": [
+   {
+    "texto": "Cuidar da saúde de pessoas ou animais",
+    "tags": [
+     "sau",
+     "ani"
+    ]
+   },
+   {
+    "texto": "Construir ou transformar espaços",
+    "tags": [
+     "con",
+     "cri"
+    ]
+   },
+   {
+    "texto": "Criar tecnologia que muda o dia a dia",
+    "tags": [
+     "tec"
+    ]
+   },
+   {
+    "texto": "Defender, ensinar ou orientar pessoas",
+    "tags": [
+     "com",
+     "pes"
+    ]
+   },
+   {
+    "texto": "Proteger a natureza e produzir de forma sustentável",
+    "tags": [
+     "nat",
+     "ani"
+    ]
+   },
+   {
+    "texto": "Fazer negócios e organizações crescerem",
+    "tags": [
+     "ges",
+     "lid"
+    ]
+   }
+  ]
+ },
+ {
+  "pergunta": "Como você se sente com rotina e imprevistos?",
+  "opcoes": [
+   {
+    "texto": "Prefiro rotina organizada e previsível",
+    "tags": [
+     "ges",
+     "exa"
+    ]
+   },
+   {
+    "texto": "Gosto de variedade, cada dia diferente",
+    "tags": [
+     "cri",
+     "lid"
+    ]
+   },
+   {
+    "texto": "Gosto de urgência e decisões rápidas",
+    "tags": [
+     "sau",
+     "lid"
+    ]
+   },
+   {
+    "texto": "Depende: o importante é ter propósito",
+    "tags": [
+     "pes",
+     "inv"
+    ]
+   }
+  ]
+ }
+]
