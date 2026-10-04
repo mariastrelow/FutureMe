@@ -1,6 +1,9 @@
 // Função serverless do Netlify: substitui o server.js. Uma chamada à Gemini por estudante, nada é gravado.
 const cursos = require("../../public/cursos.json");
 const norm = (s) => String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+// Compara nomes de curso ignorando acentos, plural e textos extras como "Fisioterapia (Saúde + Movimento)".
+const nomeLimpo = (n) => String(n || "").split(/\s*[(\[:–—-]\s*/)[0].trim();
+const chave = (n) => norm(nomeLimpo(n)).replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter(Boolean).map((w) => (w.length > 4 && w.endsWith("s") ? w.slice(0, -1) : w)).join(" ");
 const json = (status, body) => ({ statusCode: status, headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
 
 exports.handler = async (event) => {
@@ -25,6 +28,7 @@ ${afya.join("\n")}
 REGRAS:
 - Primeiro identifique de 2 a 4 áreas de interesse; depois relacione-as às características do estudante; depois sugira de 4 a 6 cursos de graduação reais e atuais (da Afya ou não).
 - Escolha pelo PERFIL do estudante, nunca pela instituição. NÃO se limite à lista da Afya: considere todo o universo de cursos de graduação reais do Brasil (saúde, exatas, humanas, artes, comunicação, tecnologia, natureza, gestão, esportes, educação, engenharias e demais áreas). Dos 4 a 6 cursos, pelo menos 3 devem ser de fora da lista da Afya, sempre que combinarem com as respostas, incluindo pelo menos 1 curso pouco conhecido ou específico que o estudante provavelmente nunca considerou. Inclua cursos da Afya só quando realmente combinarem.
+- No campo "nome" escreva SOMENTE o nome do curso (ex.: "Fisioterapia"), sem parênteses, áreas ou complementos; a área vai no campo "area".
 - Varie: inclua pelo menos 2 cursos menos óbvios que o estudante talvez nunca tenha considerado. Não repita sempre Medicina, Direito, Psicologia, Enfermagem ou Ciência da Computação; só inclua se as respostas realmente indicarem.
 - Linguagem de descoberta e possibilidade ("pode combinar", "talvez seja interessante conhecer", "pode levar a caminhos como"). NUNCA diga "seu curso é", "você deve fazer", "nasceu para" ou "profissão certa".
 - Caminhos de atuação são possibilidades, nunca garantia de carreira.
@@ -58,8 +62,8 @@ Responda SOMENTE com JSON neste formato:
     const txt = (data.candidates?.[0]?.content?.parts || []).map((p) => p.text).join("");
     const out = JSON.parse(txt.replace(/```json|```/g, "").trim());
     out.cursos = (out.cursos || []).slice(0, 6).map((c) => {
-      const ref = cursos.find((x) => norm(x.nome) === norm(c.nome));
-      return { ...c, afya: !!(ref && ref.afya), url: ref && ref.afya ? ref.url : null };
+      const ref = cursos.find((x) => chave(x.nome) === chave(c.nome));
+      return { ...c, nome: ref ? ref.nome : nomeLimpo(c.nome), afya: !!(ref && ref.afya), url: ref && ref.afya ? ref.url : null };
     });
     if (!out.cursos.length) throw new Error("vazio");
     return json(200, out);
